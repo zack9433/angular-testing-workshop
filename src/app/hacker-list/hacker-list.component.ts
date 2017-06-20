@@ -15,6 +15,8 @@ export class HackerListComponent implements OnInit {
   constructor(public api: ApiService, public router: Router) { }
 
   ngOnInit() {
+    console.log("hello");
+
     this.api.getHackers()
       .then(data => this.hackers = data);
   }
